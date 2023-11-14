@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Calc</button>
+    <p id="res"></p>
+
+    <script>
+        btn = document.getElementById("btn");
+        r = document.getElementById("res");
+
+        btn.addEventListener("click", fnc);
+
+        function fnc() {
+            r.innerHTML = "Hello, World!"
+        }
+    </script>
+
+
+    <button id="btn1">go 1</button>
+    <p id="res1"></p>
+
+    <button id="btn_a">go 2</button>
+    <p id="res_2"></p>
+
+    <script>
+        btn = document.getElementById("btn1");
+        r = document.getElementById("res1");
+        btn = document.getElementById("btn_a");
+        r = document.getElementById("res_2");
+
+        btn1.addEventListener("click", fnc);
+        btn_a.addEventListener("click",fnc_a)
+
+        function fnc() {
+            r.innerHTML = "1"
+        }
+        function fnc_a() {
+            r.innerHTML = "2"
+        }
+    </script>
+</body>
+
+</html>
